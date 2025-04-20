@@ -5,9 +5,9 @@ export function createCard({ title, value, icon ,color}) {
       <div class="cards-body">
         <div class="cards-title">
           <p>${title}</p>
-          <span>${value}</span>
+          <span style="color:${color}">${value}</span>
         </div>
-        <i class="material-icons cards-icon">${icon}</i>
+        <i style="color:${color}" class="material-icons cards-icon">${icon}</i>
       </div>
     `;
     return card;

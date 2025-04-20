@@ -24,8 +24,10 @@ body{
     width: 268px;
     background: var(--white-color);
     transition: width 0.3s ease;
-    position: relative;
+    position: sticky;
     z-index: 100;
+    top: 0;
+    right: 0;
 }
 
 .sidebar-header{
@@ -350,6 +352,47 @@ body{
   padding: 10px 0;
   color: var(--text-color);
 }
-.cards-icon{
+
+.chart-continer{
+  background-color: var(--white-color);
+  margin: 20px 0;
+  border-radius: 15px;
+}
+.chart-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+.chart-title div{
+  display: flex;
+  align-items: center;
+}
+.chart-title div i{
+  color: var(--primary-color);
+
+}
+.chart-title div p{
+  color: var(--text-color);
+  font-weight: 600;
+  line-height: 24px;
+  margin-right: 5px;
   
+}
+.sttings-btn{
+  color: var(--text-color);
+  background-color: var(--white-color);
+  border: none;
+}
+#chart-container{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+#chart1{
+  width: 60%;
+}
+#chart2{
+  width: 30%;
 }
