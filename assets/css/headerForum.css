@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'yekan';
+    --primary-color: #108B62;
+    --white-color: #fff;
+    --text-color : #686F82;
+    --red-color : #EF5353;
+    --border-color-primary: rgb(233, 233, 233);
+    --back-color : #f5f9f8;
+    --black-color : #000;
+    --orange-color:#F59202;
+    --background-icon:#EDF0EF;
+    --nav-color: #334155;
+}
+#header{
+    background-color: var(--white-color);
+    height: 81px;
+    /* width:1200px */
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+    height: 81px;
+    position: relative;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 300px;
+}
+.menu li {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+.menu a{
+    text-decoration: none;
+    margin-right: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 21px;
+    color: var(--nav-color);
+}   
+.menu a , i{
+    color: var(--nav-color);
+}
+.menu-item i{
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--background-icon);
+    color: var(--text-color);
+    box-shadow: 1px 1px 10px var(--border-color-primary);
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.header-user{
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+}
+/* .header-user p,span{
+    margin-right: 10px;
+    text-align: right;   
+} */
+.header-user p{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+}
+.header-user span{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+}
+.autor{
+    text-align: center;
+    position: relative;
+    right: -10px;
+}
+.user span{
+    margin: 15px 21.5px 15px 21.5px;
+}
+.header-btn{
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border-radius: 47px;
+    border: 1px solid var(--border-color-primary);
+    display: flex;
+    align-items: center;
+    /* margin: 5px; */
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 6px 4px 6px 3px;
+}
+.header-btn i{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    margin: 4.5px 3px 4.5px 4px;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.divider{
+    color: var(--text-color);
+    font-weight: bold;
+}

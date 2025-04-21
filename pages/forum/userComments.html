@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fe" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/headerForum.css">
+    <link rel="stylesheet" href="../../assets/css/sidebarForum.css">    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/font.css">
+    <link rel="stylesheet" href="../../assets/css/createElement.css">
+    <link rel="stylesheet" href="../../assets/css/forum.css">
+</head>
+<body>
+    <header id="header"></header>
+    <aside id="sidebar"></aside> 
+    <main class="main">
+        <div id="main-input"></div>
+        <div id="content-category"></div>
+
+        <div id="user-comments"></div>
+    </main>  
+
+    <script type="module">
+        import { renderHeader } from '../../assets/js/components/headerForum.js';
+        renderHeader('header');
+        import { renderSidebar } from '../../assets/js/components/sidebarForum.js';
+        renderSidebar('sidebar');
+        import {renderElement} from '../../assets/js/components/createElement.js';
+        renderElement('main-input');
+        import {renderForumCategory} from '../../assets/js/components/forumCategory.js'
+        renderForumCategory('content-category')
+        import {renderUserComments} from "../../assets/js/components/userComment.js";
+        renderUserComments('user-comments');
+    </script>    
+    <script src="https://cdn.tailwindcss.com"></script>  
+</body>
+</html>

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/dashbord.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/font.css">
 </head>
 <body>
 
@@ -83,7 +83,7 @@
             <li class="menu-item">
                 <div class="menu-header">
                     <i class="material-icons">assignment_add</i>
-                <a href="#" class="menu-text">فروم</a>
+                <a href="./pages/forum/index.html" class="menu-text">فروم</a>
                 </div>
             </li>
             <li class="menu-item has-submenu">
@@ -148,19 +148,36 @@
             <div id="cardsContainer" class="cards-grid"></div>
           </div>
 
-          <div class="chart-continer">
-            <div class="chart-title">
-              <div>
-                <i class="material-icons">assessment</i>
-                <p>جزئیات درآمد</p>
+          <div class="dashbord">
+            <!-- chart -->
+            <div class="chart-continer">
+              <div class="chart-title">
+                <div>
+                  <i class="material-icons">assessment</i>
+                  <p>جزئیات درآمد</p>
+                </div>
+                <button class="material-icons sttings-btn">tune</button>
               </div>
-              <button class="material-icons sttings-btn">tune</button>
+              <div id="chart-container">
+                <div id="chart1"></div>
+                <div id="chart2"></div>
+              </div>
             </div>
-            <div id="chart-container">
-              <div id="chart1"></div>
-              <div id="chart2"></div>
-            </div>
+            <!-- table -->
+
+            <div class="dashbord-border">
+              <div class="">
+                <i class="material-icons">people</i>
+                <p>لیست دانشجویان</p>
+              </div>
+              <div>
+                <p>دوره جامع آموزش فریلنسری</p>
+                <i class="material-icons">expand_more</i>
+              </div>
+            </div> 
           </div>
+
+                   
         </main>
       </div>
       

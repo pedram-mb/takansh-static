@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'yekan';
+    --primary-color: #108B62;
+    --white-color: #fff;
+    --text-color : #686F82;
+    --red-color : #EF5353;
+    --border-color-primary: rgb(233, 233, 233);
+    --back-color : #f5f9f8;
+    --black-color : #000;
+    --orange-color:#F59202;
+    --blue-color:#4DB2D2CC;
+    --background-icon:#EDF0EF;
+}
+#sidebar{
+    width: 201px;
+    height: 669px;
+    margin: 10px 27px 42px 12px;
+    float: right;
+}
+.search-box{
+    border-radius: 35px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    box-shadow: 4px 20px 10px var(--border-color-primary);
+}
+.search-box input{
+    width: 186px;
+    height: 26px;
+    margin: 4px 12px 4px 3px;
+    border: none;
+}
+.search-box i{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 3px;
+    font-size: 16px;
+}
+.sidebar-first-box{
+    margin: 10px 0px 10px 12px;
+    background-color: var(--white-color);
+    box-shadow: 4px 20px 10px var(--border-color-primary);
+    border-radius: 14px;
+    width: 201px;
+    height: 168px;
+}
+.sidebar-first-box h4{
+    padding: 10px 14px;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 700;
+}
+.sidebar-first-box ul{
+    list-style: none;
+    margin: 10px 7.5px;
+}
+.men-item{
+    display: flex;
+    align-items: center;
+    margin: 6px 5px 6px 7px;
+}
+.men-item i{
+    border-radius: 7px;
+    width: 28px;
+    height: 28px;
+    background-color: var(--blue-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    font-size: 18px;
+}
+.men-item a{
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 7px 6px 7px 67px;
+    text-decoration: none;
+}
+
+.sidebar-second-box{
+    margin: 10px 0;
+    background-color: var(--white-color);
+    box-shadow: 4px 20px 10px var(--border-color-primary);
+    border-radius: 14px;
+}
+.sidebar-second-box .content{
+    padding: 10px 7.5px;
+}
+.sidebar-second-box .content i{
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+    background-color: var(--background-icon);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content .first-item{
+    display: flex;
+    align-items: center;
+    padding: 6px 5px 6px 7px;
+}
+.content .second-item{
+    display: flex;
+    align-items: center;
+    padding: 6px 5px 6px 7px;
+
+}
+.content .therd-item{
+    display: flex;
+    align-items: center; 
+    padding: 6px 5px 6px 7px;
+}
+
+.content .first-item .box-body{
+    margin: 0 6px;
+}
+.content{
+    padding: 10px 7.5px;
+}
+/* .content .box-body{
+    padding: 0 6px;
+} */
+.box-body a{
+    font-size: 12;
+    font-weight: 500;
+    color: var(--text-color);
+    line-height: 14px;
+    text-decoration: none;
+    display: block;
+    padding: 6px 6px 1px 0;
+
+}
+.box-body span{
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.sidebar-therd-box{
+    border-radius: 14px;
+    background-color: var(--white-color);
+    margin: 10px 0;
+    height: 320px;
+    width: 201px;
+    box-shadow: 4px 20px 10px var(--border-color-primary);
+}
+.sidebar-therd-box h4{
+    padding: 10px 14px;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.cards{
+    display: flex;
+    margin: 10px 7.5px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color-primary);
+    border-radius: 10px;
+    padding: 6px 5px 6px 7px;
+}
+.cards img{
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+    /* padding: 4px;     */
+}   
+.cards .cards-body{
+    width: 140px;
+    height: 32px;
+    padding: 2px 6px;
+}
+.cards-body p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+}
+.cards-body span{
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 14px;
+    position: relative;
+    bottom: 3px;
+    right: -5px;
+}
+.cards-body i{
+    font-size: 12px;
+    padding-bottom: 5px;
+
+}

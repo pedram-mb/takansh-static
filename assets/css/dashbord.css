@@ -34,7 +34,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px 10px; 
+    /* padding: 25px 10px;  */
+    margin-top: 20px;
 }
   
 .sidebar.collapsed {
@@ -48,9 +49,14 @@ body{
     width: 30px;
 }
 .logo-full {
-    display: block;
     width: 100%;
-    
+    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: -10px;
+  
 }
   
 .sidebar.collapsed .logo-mini {
@@ -71,7 +77,7 @@ body{
     width: 25px;
     height: 25px;
     border-radius: 5px;
-    box-shadow: 1px 2px 3px gray;
+    box-shadow: 1px 2px 3px var(--border-color-primary);
     position: absolute;
     left: -10px;
     z-index: 100;
@@ -133,8 +139,8 @@ body{
     color: var(--red-color);
 }
 .menu-item:last-child i{
-    position: fixed;
-    bottom: 20px;
+    position: absolute;
+    bottom: 22px;
     right: 40px;
     color: var(--red-color);
 }
@@ -205,6 +211,7 @@ body{
     padding: 20px;
     background: var(--back-color);
     transition: margin 0.3s ease;
+    box-shadow: 1px 5px 10px var(--border-color-primary);
 }
 .content-header{
     display: flex;
@@ -246,7 +253,7 @@ body{
     top: 0;
     left: -1000px;
     right: 100px;
-    height: 55vh;
+    height: 60vh;
     max-width: 300px;
     background: white;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -327,7 +334,7 @@ body{
   width: 100%;
   display: flex;
   margin-top: 15px;
-
+  box-shadow: 3px 5px 10px var(--border-color-primary);
 }
 .cards-continer img{
   min-width: 287px;
@@ -387,12 +394,20 @@ body{
 #chart-container{
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px 20px;
 }
 #chart1{
-  width: 60%;
+  width: 50%;
+  background-color: var(--back-color);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 4px 10px var(--border-color-primary);
 }
 #chart2{
   width: 30%;
+  background-color: var(--back-color);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 4px 10px var(--border-color-primary);
 }

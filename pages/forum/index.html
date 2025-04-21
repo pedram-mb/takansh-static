@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fe" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروم</title>
+    <link rel="stylesheet" href="../../assets/css/headerForum.css">
+    <link rel="stylesheet" href="../../assets/css/sidebarForum.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/forum.css">
+    <link rel="stylesheet" href="../../assets/css/font.css">
+    <link rel="stylesheet" href="../../assets/css/createElement.css">
+    <link rel="stylesheet" href="../../assets/css/postCards.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="sidebar"></div>
+    <div id="main">
+      <div id="main-input"></div>
+      <div id="main-cards"></div>
+    </div>
+
+  <script type="module">
+    import { renderHeader } from '../../assets/js/components/headerForum.js';
+    renderHeader('header');
+    import { renderSidebar } from '../../assets/js/components/sidebarForum.js';
+    renderSidebar('sidebar');
+    import {renderElement} from '../../assets/js/components/createElement.js';
+    renderElement('main-input');
+    import {renderPostCards} from "../../assets/js/components/postCards.js";
+    renderPostCards('main-cards')
+  </script>
+</body>
+</html>
