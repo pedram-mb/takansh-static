@@ -5,7 +5,7 @@ export function renderHeader(targetId){
     header.innerHTML = `
             <img src="../../assets/image/sidebar/logo.svg" alt="logo" />
             <ul class="menu">
-                <li class="menu-item"><i class="material-icons">home</i><a href="#">خانه</a></li>
+                <li class="menu-item"><i class="material-icons">home</i><a href="../../index.html">خانه</a></li>
                 <li class="menu-item"><i class="material-icons">post_add</i><a href="#">انجمن اکادمی تکانش</a></li>
                 <li class="menu-item"><i class="material-icons">edit_note</i><a href="#">انجمن گروپلسنیگ</a></li>
             </ul>

@@ -133,9 +133,7 @@ body{
 .content{
     padding: 10px 7.5px;
 }
-/* .content .box-body{
-    padding: 0 6px;
-} */
+
 .box-body a{
     font-size: 12;
     font-weight: 500;
@@ -151,7 +149,14 @@ body{
     font-weight: 400;
     color: var(--text-color);
 }
-
+.sidebar-second-box .box-body a{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+}
+.sidebar-second-box .box-body span{
+    margin-right: 6px;
+}
 .sidebar-therd-box{
     border-radius: 14px;
     background-color: var(--white-color);

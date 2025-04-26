@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fe" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/headerForum.css">
+    <link rel="stylesheet" href="../../assets/css/sidebarForum.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/font.css">
+    <link rel="stylesheet" href="../../assets/css/forum.css">
+</head>
+<body>
+    <header id="header"></header>
+    <aside id="sidebar"></aside> 
+    <main id="main">
+        <div class="question-header">
+            <i class="material-icons">light_mode</i>
+            <p>سوالات متداول</p>
+        </div>
+        <div class="cards-question">
+                <div class="cards-item">
+                    <div class="cards-info">
+                        <p>سولات و موضوعات</p>
+                        <span>فریلنسری و درآمد دلاری</span>
+                    </div>
+                    <i class="material-icons">payments</i>
+                </div>
+                <div class="cards-item">
+                    <div class="cards-info">
+                        <p>سولات و موضوعات</p>
+                        <span>فریلنسری و درآمد دلاری</span>
+                    </div>
+                    <i class="material-icons">payments</i>
+                </div>
+                <div class="cards-item">
+                    <div class="cards-info">
+                        <p>سولات و موضوعات</p>
+                        <span>فریلنسری و درآمد دلاری</span>
+                    </div>
+                    <i class="material-icons">payments</i>
+                </div>
+                <div class="cards-item">
+                    <div class="cards-info">
+                        <p>سولات و موضوعات</p>
+                        <span>فریلنسری و درآمد دلاری</span>
+                    </div>
+                    <i class="material-icons">payments</i>
+                </div>
+        </div>
+        <!-- <div id="categories" class="flex justify-between mb-6 bg-white p-4 rounded-xl shadow "></div> -->
+         <!-- <div id="questions" class="question-text"></div> -->
+        <div class="question-body">
+            <div class="question-item">
+                <div class="question-item-header">
+                    <p>این یک متن ساختگی است</p>
+                    <i class="material-icons">add</i>
+                 </div>
+                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro dolorem repellendus ipsa amet!</span>
+            </div>
+        </div>
+    </main>
+    <script type="module">
+        import { renderHeader } from '../../assets/js/components/headerForum.js';
+        renderHeader('header');
+        import { renderSidebar } from '../../assets/js/components/sidebarForum.js';
+        renderSidebar('sidebar');
+        // import { renderCategories, renderQuestions } from '../../assets/js/components/askQuestion.js';    
+        // window.onload = function () {
+        // renderCategories(document.getElementById('categories'));
+        // renderQuestions(document.getElementById('questions'));
+        // };
+        </script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <script type="module" src="../../assets/js/components/askQuestion.js"></script> -->
+</body>
+</html>

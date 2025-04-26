@@ -3,185 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/dashbord.css">
+    <title>فروم</title>
+    <link rel="stylesheet" href="./assets/css/headerForum.css">
+    <link rel="stylesheet" href="./assets/css/">
+    <link rel="stylesheet" href="./assets/css/sidebarForum.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/forum.css">
     <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/createElement.css">
+    <link rel="stylesheet" href="./assets/css/postCards.css">
 </head>
 <body>
+    <div id="header"></div>
+    <div id="sidebar"></div>
+    <div id="main">
+      <div id="main-input"></div>
+      <div id="main-cards"></div>
+    </div>
 
-    <div class="container">
-        <aside class="sidebar collapsed" id="sidebar">
-            <div class="sidebar-header">
-                <a href="./index.html">
-                    <!-- <img src="./assets/image/sidebar/logo.svg" alt="logo"> -->
-                    <img src="./assets/image/sidebar/logo.svg" class="logo-full" alt="Full Logo">
-                    <img src="./assets/image/sidebar/Group.svg" class="logo-mini" alt="Mini Logo">
-                </a>
-                <button class="toggle-btn" id="toggleSidebar">
-                    <i class="material-icons">arrow_right_alt</i>
-                </button>
-            </div>
-            <div class="user">
-                <img src="./assets/image/sidebar/Avatar.svg" alt="user image">
-                <div>
-                    <p>تیدا گودرزی</p>
-                    <span>مدرس آکادمی</span>
-                </div>
-            </div>
-          <ul class="nav">
-            <li class="menu-item">
-                <div class="menu-header">
-                    <i class="material-icons">home</i>
-                    <a href="#" class="menu-text">داشبورد</a>
-                </div>
-            </li>
-            <li class="menu-item has-submenu">
-                <div class="menu-header">
-                  <i class="material-icons">shopping_cart</i>
-                  <a href="#" class="menu-text">فروش و مارکتینگ</a>
-                  <i class="submenu-toggle material-icons">add</i>
-                </div>
-              
-                <ul class="submenu">
-                  <li><a href="#">مدیریت فروش و درآمد</a></li>
-                  <li><a href="#">مدیریت وبینارها</a></li>
-                  <li><a href="#">فروش مستقیم مدرس</a></li>
-                </ul>
-            </li>
-            <li class="menu-item">
-                <div class="menu-header">
-                    <i class="material-icons">checklist</i>
-                <a href="#" class="menu-text">مدیریت دوره ها</a>
-                </div>
-            </li>
-            <li class="menu-item">
-                <div class="menu-header">
-                    <i class="material-icons">people</i>
-                <a href="#" class="menu-text">مدیریت دانشجویان</a>
-                </div>
-            </li> 
-            <li class="menu-item has-submenu">
-                <div class="menu-header">
-                  <i class="material-icons">paid</i>
-                  <a href="#" class="menu-text">گزارش مالی</a>
-                  <i class="submenu-toggle material-icons">add</i>
-                </div>
-              
-                <ul class="submenu">
-                  <li><a href="#">جزئیات درآمد دانشجویان</a></li>
-                  <li><a href="#">جزئیات درآمد فروش</a></li>
-                </ul>
-            </li> 
-            <li class="menu-item">
-                <div class="menu-header">
-                    <i class="material-icons">mail</i>
-                <a href="#" class="menu-text">پیام ها</a>
-                <span class="submenu-toggle massages">50</span>
-                </div>
-            </li>
-            <li class="menu-item">
-                <div class="menu-header">
-                    <i class="material-icons">assignment_add</i>
-                <a href="./pages/forum/index.html" class="menu-text">فروم</a>
-                </div>
-            </li>
-            <li class="menu-item has-submenu">
-                <div class="menu-header">
-                  <i class="material-icons">manage_accounts</i>
-                  <a href="#" class="menu-text">ویرایش حساب کاربری</a>
-                  <i class="submenu-toggle material-icons">add</i>
-                </div>
-              
-                <ul class="submenu">
-                  <li><a href="#">مشخصات عمومی</a></li>
-                  <li><a href="#">مشخصات حساب بانکی</a></li>
-                  <li><a href="#">قراردادها</a></li>
-                </ul>
-            </li> 
-            <li class="menu-item">
-                <div class="menu-header">
-                    <i class="material-icons logout">logout</i>
-                <a href="#" class="menu-text">خروج از حساب کاربری</a>
-                </div>
-            </li>
-          </ul>
-        </aside>
-
-        <main class="content" id="content">
-          <div class="content-header">
-            <div class="content-title">
-                <h2>داشبورد</h2>
-                <div class="crumbs">
-                    <nav>
-                        <div>
-                            <a href="#">پنل مدرسین</a>
-                            <span>></span>
-                            <a href="#">داشبورد</a>
-                        </div>
-                    </nav>
-                </div>
-              </div>
-              <div class="detils">
-                <i class="material-icons">schedule</i>
-                <span>14:15:16</span>
-                <span id="divider">|</span>
-                <span>29 دی 1304</span>
-                <i id="openNotifications" class="material-icons notif">notifications_active</i>
-                <div id="notificationsPanel" class="notification-panel">
-                    <div class="panel-header">
-                      <h3>اعلانات شما</h3>
-                      <button id="closePanel">×</button>
-                    </div>
-                    <ul class="notifications-list">
-
-                    </ul>
-                    <div class="panel-footer">
-                      <button class="panel-footer-btn">همه پیام‌ها</button>
-                    </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="cards-continer">
-            <img  src="./assets/image/main/Teacher's labels.png" alt="">
-            <div id="cardsContainer" class="cards-grid"></div>
-          </div>
-
-          <div class="dashbord">
-            <!-- chart -->
-            <div class="chart-continer">
-              <div class="chart-title">
-                <div>
-                  <i class="material-icons">assessment</i>
-                  <p>جزئیات درآمد</p>
-                </div>
-                <button class="material-icons sttings-btn">tune</button>
-              </div>
-              <div id="chart-container">
-                <div id="chart1"></div>
-                <div id="chart2"></div>
-              </div>
-            </div>
-            <!-- table -->
-
-            <div class="dashbord-border">
-              <div class="">
-                <i class="material-icons">people</i>
-                <p>لیست دانشجویان</p>
-              </div>
-              <div>
-                <p>دوره جامع آموزش فریلنسری</p>
-                <i class="material-icons">expand_more</i>
-              </div>
-            </div> 
-          </div>
-
-                   
-        </main>
-      </div>
-      
-    <script type="module" src="./assets/js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module">
+    import { renderHeader } from './assets/js/components/headerForum.js';
+    renderHeader('header');
+    import { renderSidebar } from './assets/js/components/sidebarForum.js';
+    renderSidebar('sidebar');
+    import {renderElement} from './assets/js/components/createElement.js';
+    renderElement('main-input');
+    import {renderPostCards} from "./assets/js/components/postCards.js";
+    renderPostCards('main-cards')
+  </script>
 </body>
 </html>

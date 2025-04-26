@@ -12,7 +12,7 @@ export function renderSidebar(targetId) {
         <h4>دسته بندی ها</h4>
         <ul class="side-menu">
           <li class="men-item"><i class="material-icons blue">help_center</i><a href="../../../pages/forum/myTopic.html">تاپیک های من</a></li>
-          <li class="men-item"><i class="material-icons green">tips_and_updates</i><a href="">سوالات متداول</a></li>
+          <li class="men-item"><i class="material-icons green">tips_and_updates</i><a href="../../../pages/forum/askedQuestion.html">سوالات متداول</a></li>
           <li class="men-item"><i class="material-icons orange">text_snippet</i><a href="">اخبار تکانش</a></li>
         </ul>
       </div> 
